@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhapVao"> <br>
+<button  onclick="hienso(1)">1</button>
+<button  onclick="hienso(2)">2</button>
+<button  onclick="hienso(3)">3</button>
+<button  onclick="hienso(4)">4</button>
+<button  onclick="hienso(5)">5</button>
+<button  onclick="hienso(6)">6</button>
+<button  onclick="hienso(7)">7</button>
+<button  onclick="hienso(8)">8</button>
+<button  onclick="hienso(9)">9</button>
+<button  onclick="hienso('+')">+</button>
+<button  onclick="hienso('-')">-</button>
+<button  onclick="hienso('*')">x</button>
+<button  onclick="hienso('/')">/</button>
+<button  onclick="tinh()">=</button>
+<button  onclick="xoa()">AC</button>
+</body>
+
+<script>
+
+    function hienso(x){
+        document.getElementById('nhapVao').value += x;
+    }
+    function tinh(){
+        document.getElementById('nhapVao').value = eval(document.getElementById('nhapVao').value)
+    }
+    function xoa   (){
+        document.getElementById('nhapVao').value = ''
+    }
+
+
+</script>
+</html>
